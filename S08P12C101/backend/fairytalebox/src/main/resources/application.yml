@@ -1,0 +1,39 @@
+spring:
+  profiles:
+    active:
+  devtools:
+    livereload:
+      enabled: true
+  datasource:
+    url: jdbc:mysql://i8c101.p.ssafy.io/talebox?serverTimezone=UTC&useUniCode=yes&characterEncoding=UTF-8
+    username: seunghyeon
+    password: ssafyc101
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        use_sql_comments: true
+    hibernate:
+      ddl-auto: update
+  mvc:
+    pathmatch:
+      matching-strategy : ant_path_matcher
+
+jwt:
+  header: Authorization
+  #HS512 알고리즘을 사용할 것이기 때문에 512bit, 즉 64byte 이상의 secret key를 사용해야 한다.
+  #echo 'spring-boot-security-jwt-ssafy-project-fairytalebox-spring-boot-security-jwt'|base64
+  secret: c3ByaW5nLWJvb3Qtc2VjdXJpdHktand0LXNzYWZ5LXByb2plY3QtZmFpcnl0YWxlYm94LXNwcmluZy1ib290LXNlY3VyaXR5LWp3dA==
+  token-validity-in-milliseconds: 1800000
+  refresh-token-validity-in-milliseconds: 1210000000
+
+server:
+  error:
+    include-exception: false      # Response 에 Exception 을 표시할지
+    include-message: always       # Response 에 Exception Message 를 표시할지 (never | always | on_param)
+    include-stacktrace: on_param  # Response 에 Stack Trace 를 표시할지 (never | always | on_param) on_trace_params 은 deprecated
+    whitelabel.enabled: true

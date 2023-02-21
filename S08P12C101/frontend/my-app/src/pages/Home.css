@@ -1,0 +1,26 @@
+.homeMainText {
+  position: relative;
+  margin: auto;
+  top: -2rem;
+  margin-bottom: 1%;
+  font-size: 8rem;
+  width: fit-content;
+  color: rgb(0, 0, 0);
+  text-shadow: 4px 4px #ffffff;
+}
+#Grid {
+  margin: auto;
+  width: 76%;
+  padding: 6%;
+}
+.selectImg {
+  margin: auto;
+  width: 23vw;
+  height: 29.5vh;
+  object-fit: cover;
+  transition: 0.25s;
+}
+.selectImg:hover {
+  transform: scale(1.09);
+  transition: 0.25s;
+}

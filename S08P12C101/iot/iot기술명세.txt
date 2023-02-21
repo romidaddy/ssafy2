@@ -1,0 +1,67 @@
+아두이노 라즈베리파이 통신
+아두이노 mp3파일 생성
+아두이노 배터리찾기
+아두이노 자이로센서
+아두이노 마이크센서
+
+라즈베리파이 stt
+라즈베리파이 텍스트 비교 후 일치율
+
+https://diy-project.tistory.com/12 - 아두이노 에어마우스 제작
+
+https://gnsb8.tistory.com/entry/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC-%ED%8C%8C%EC%9D%B4-Wii-%EB%A6%AC%EB%AA%A8%EC%BB%A8Wii-Remote-%EB%88%88%EC%B0%A8%ED%81%ACNunchuk-%EC%84%A4%EC%A0%95 - 라즈베리파이 wii 연결 및 블루투스 연결
+
+https://www.youtube.com/watch?v=lhIV-P-Dg9k - air mouse youtube 클릭까지
+
+
+https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=icbanq&logNo=221615234957 - raspberry pi tts기술
+
+https://deep-learning-challenge.tistory.com/88 - stt 기술 정리
+
+https://kaki104.tistory.com/560 - 한국어 stt
+
+https://diy-project.tistory.com/91 - 구글 + 한국어 stt
+
+https://fishpoint.tistory.com/5266 - mic블루투스 통신
+
+https://community.element14.com/challenges-projects/project14/nano-rama/b/blog/posts/ble-on-arduino-nano-33-ble-sense---bluez-connect - 블루투스 통신
+
+https://blog.naver.com/PostView.naver?blogId=mapes_khkim&logNo=221899887945&parentCategoryNo=&categoryNo=1&viewDate=&isShowPopularPosts=false&from=postView - 아두이노 음성파일 제작 및 웹통신, 많은 예제
+<에어마우스>
+버튼2개
+mpu6050
+esp32
+
+<stt>
+마이크 max9814
+스피커
+MP3 보이스 모듈 -8MB 저장공간 (Gravity: UART MP3 Voice Module) 이거 한번 찾아봐도 좋을 듯 싶다.
+
+
+
+
+
+
+
+01/19 막힌 곳
+(venv) pi@raspberrypi:~/Downloads/box/mic $ python3 speech_control.py
+Traceback (most recent call last):
+  File "speech_control.py", line 2, in <module>
+    from google.cloud import speech
+  File "/home/pi/Downloads/box/mic/venv/lib/python3.7/site-packages/google/cloud/speech/__ini                                                                 t__.py", line 21, in <module>
+    from google.cloud.speech_v1.services.adaptation.client import AdaptationClient
+  File "/home/pi/Downloads/box/mic/venv/lib/python3.7/site-packages/google/cloud/speech_v1/__                                                                 init__.py", line 21, in <module>
+    from .services.adaptation import AdaptationClient
+  File "/home/pi/Downloads/box/mic/venv/lib/python3.7/site-packages/google/cloud/speech_v1/se                                                                 rvices/adaptation/__init__.py", line 16, in <module>
+    from .client import AdaptationClient
+  File "/home/pi/Downloads/box/mic/venv/lib/python3.7/site-packages/google/cloud/speech_v1/se                                                                 rvices/adaptation/client.py", line 36, in <module>
+    from google.api_core import gapic_v1
+  File "/home/pi/Downloads/box/mic/venv/lib/python3.7/site-packages/google/api_core/gapic_v1/                                                                 __init__.py", line 16, in <module>
+    from google.api_core.gapic_v1 import config
+  File "/home/pi/Downloads/box/mic/venv/lib/python3.7/site-packages/google/api_core/gapic_v1/                                                                 config.py", line 23, in <module>
+    import grpc
+  File "/home/pi/Downloads/box/mic/venv/lib/python3.7/site-packages/grpc/__init__.py", line 2                                                                 2, in <module>
+    from grpc import _compression
+  File "/home/pi/Downloads/box/mic/venv/lib/python3.7/site-packages/grpc/_compression.py", li                                                                 ne 20, in <module>
+    from grpc._cython import cygrpc
+ImportError: /lib/arm-linux-gnueabihf/libm.so.6: version `GLIBC_2.29' not found (required by                                                                  /home/pi/Downloads/box/mic/venv/lib/python3.7/site-packages/grpc/_cython/cygrpc.cpython-37m-a                                                                 rm-linux-gnueabihf.so)
