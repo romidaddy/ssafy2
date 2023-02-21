@@ -1,0 +1,108 @@
+.bgImg16 {
+    margin-top: 1.5%;
+    width: 100vw;
+    height: 250vh;
+    object-fit: contain;
+    transform: translate(0,-40%);
+    animation-name: sky-move;
+    animation-duration: 5s;
+    animation-delay: 10s;
+    animation-fill-mode: forwards;
+}
+
+.SceneBox{
+    text-align: center;
+}
+
+.Homebtn{
+    position: absolute;
+    right: 10%;
+}
+.siblings16{
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    top: -30%;
+    right: 30%;
+    height: 50%;
+    width: 20vw;
+    height: 200vh;
+    object-fit: contain;
+}
+.tiger16{
+    position: absolute;
+    left: 25%;
+    bottom: 5%;
+    top: -30%;
+    right: 40%;
+    height: 50%;
+    width: 20vw;
+    height: 200vh;
+    object-fit: contain;
+}
+@keyframes sky-move {
+    from{
+        transform: translate(0,-40%);
+    }
+    to{
+        transform: translate(0,0);
+    }
+}
+@keyframes cloud-move {
+    from{
+        transform: translate(0,0);
+    }
+    to{
+        transform: translate(0, 55%);
+    }
+}
+
+.cloud{
+    position: absolute;
+    left: 25%;
+    bottom: 5%;
+    top: -80%;
+    right: 30%;
+    height: 50%;
+    width: 50vw;
+    height: 200vh;
+    object-fit: contain;
+    z-index: 1;
+    animation-name: cloud-move;
+    animation-duration: 3s;
+    animation-delay: 10s;
+    animation-fill-mode: forwards;
+}
+#Text16 {
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    left: 12.5%;
+    bottom: 0%;
+    font-size: 6vh;
+    font-family: "Jua", sans-serif;
+    height: 7%;
+    width: 75vw;
+    height: 7vh;
+    object-fit: contain;
+    text-shadow: -2px 0px white, 0px 2px white, 2px 0px white, 0px -2px white;
+  }
+  .hidden16{
+    position: absolute;
+    margin-top: -0.35%;
+    top:38%;
+    width: 100vw;
+    height: 100vh;
+    opacity: 1;
+    background-image: url("../../public/img/bgimg.jpg");
+}
+  .hidden16-2{
+    position: absolute;
+    margin-top: -0.35%;
+    top: 0%;
+    width: 100vw;
+    height: 3vh;
+    opacity: 1;
+    background-image: url("../../public/img/bgimg.jpg");
+    z-index: 2;
+}

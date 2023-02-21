@@ -1,0 +1,63 @@
+.passorfail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.historydetailContainer {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 1fr 1fr 0.1fr;
+}
+
+.histdetailtitle {
+  background-color: rgb(194, 224, 245);
+  width: 89%;
+  margin: 7% auto;
+  border-radius: 8px;
+  font-size: 4rem;
+}
+.historydetailcontent {
+  background-color: #fff;
+  border-radius: 8px;
+  padding-top: 2%;
+  margin: auto;
+  width: 88%;
+  height: 72%;
+  font-size: 3.1rem;
+}
+
+.historyDetailBox {
+  text-align: center;
+  padding: 2% 3% 0% 3%;
+}
+
+.detailMainText {
+  position: relative;
+  margin: auto;
+  top: -1rem;
+  font-size: 6.5rem;
+  width: fit-content;
+  color: rgb(0, 0, 0);
+  text-shadow: 4px 4px #ffffff;
+}
+
+.detailImg {
+  width: 4vw;
+  height: 7vh;
+  margin: auto;
+  object-fit: contain;
+}
+.histHeader {
+  margin-top: 4.5%;
+}
+.detailLine {
+  width: 94%;
+  margin: 0% auto 0.5% auto;
+  border-top: 3px dashed rgb(148, 148, 148);
+}
+.histaudio {
+  transition: 0.25s;
+}
+.histaudio:hover {
+  transform: scale(1.1);
+  transition: 0.25s;
+  background-color: #ffee83;
+}

@@ -1,0 +1,78 @@
+.bgImg {
+    margin-top: 1.5%;
+    width: 100vw;
+    height: 93vh;
+    object-fit: contain;
+    
+}
+
+.SceneBox{
+    text-align: center;
+}
+
+.Homebtn{
+    position: absolute;
+    top: 30%;
+    bottom: 20%;
+    right: 10%;
+    left: 10%;
+    
+}
+
+@keyframes tiger-move3 {
+    from {
+        transform: translate(0,0);
+    }
+    to{
+        transform: translate(0,-45%);
+    }
+}
+
+.tiger3{
+    position: absolute;
+    right: 0%;
+    top: 45%;
+    left: 0%;
+    bottom: 0%;
+    height: 100%;
+    animation-name: tiger-move3;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+
+}
+.word3{
+    position: absolute;
+    left: 30%;
+    bottom: 5%;
+    top: 18%;
+    right: 30%;
+    height: 50%;
+    object-fit: contain;
+    z-index: 10;
+    opacity: 0;
+    animation-name: word-pop, word-popout;
+    animation-duration: 1s,1s;
+    animation-delay: 5s,10s;
+    animation-fill-mode: forwards;
+    font-size:20rem;
+    font-family: "Jua", sans-serif;
+    text-shadow: -2px 0px white, 0px 2px white, 2px 0px white, 0px -2px white;
+  }
+  .popup3{
+    position: absolute;
+    top:0%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 9;
+    opacity: 0;
+    animation-name: word-pop, word-popout;
+    animation-duration: 1s,1s;
+    animation-delay: 5s,10s;
+    animation-fill-mode: forwards;
+  }

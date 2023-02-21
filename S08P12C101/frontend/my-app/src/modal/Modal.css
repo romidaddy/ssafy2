@@ -1,0 +1,82 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  backdrop-filter: blur(5px);
+  background-color: #ffffff00;
+}
+.headerbutton {
+  position: absolute;
+  top: 1.1rem;
+  right: 1.8rem;
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  border: 0;
+}
+.footerButton {
+  position: relative;
+  padding: 0.6rem 1.8rem;
+  margin: 0.3rem;
+  top: 3rem;
+  bottom: 0rem;
+  color: #fff;
+  background-color: #6c757d;
+  border-radius: 0.5rem;
+  font-family: "Yeon Sung", cursive;
+  font-size: 3rem;
+  border: 0;
+  transition: 0.25s;
+}
+.footerButton:hover {
+  transition: 0.25s;
+  background-color: #ffee83;
+  color: rgb(0, 0, 0);
+}
+.modal > section > header {
+  position: relative;
+  padding: 1.8rem 6.4rem 1.7rem 3.3rem;
+  background-color: #ffee83;
+  font-family: "Yeon Sung", cursive;
+  font-weight: 1000;
+  font-size: 3.7rem;
+  text-align: left;
+}
+.modalMain {
+  padding: 2.5rem 4rem 0rem 4rem;
+  font-family: "Yeon Sung", cursive;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+.modalFooter {
+  padding: 0.5%;
+  text-align: center;
+}
+.modal.openModal {
+  display: flex;
+  align-items: center;
+  animation: modal-bg-show 0.3s;
+}
+@keyframes modal-show {
+  from {
+    opacity: 0;
+    margin-top: -50px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+@keyframes modal-bg-show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
