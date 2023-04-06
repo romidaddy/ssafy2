@@ -1,0 +1,19 @@
+.div_searchresult{
+    color:white;
+    padding: 8px;
+    margin:5px;
+    border:white 1px solid;
+    display:flex;
+    flex-direction: column;
+
+}
+
+.selected{
+    background-color: yellow;
+    color:black;
+
+}
+
+.add_span_searchresult{
+    font-size: 0.75rem;
+}

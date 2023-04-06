@@ -1,0 +1,8 @@
+prefix=/home/ssafy/mobility-autodriving-skeleton/ssafy_ad/install
+
+Name: ssafyrari
+Description: Description of ssafyrari
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime

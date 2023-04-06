@@ -1,0 +1,2 @@
+ssafy_1:ssafy_2:ssafy_3:ssafyrari
+-DCATKIN_DEVEL_PREFIX=/home/ssafy/mobility-autodriving-skeleton/ssafy_ad/devel -DCMAKE_INSTALL_PREFIX=/home/ssafy/mobility-autodriving-skeleton/ssafy_ad/install -G Unix Makefiles

@@ -1,0 +1,125 @@
+.span_request {
+    color : white;
+    font-family: "S-CoreDream-3";
+    font-size: 1.2rem;
+}
+
+.input_request {
+    border:none;
+    height:30px;
+    width:100%;
+    background-color: black;
+    color : white;
+    padding-left: 10px;
+}
+
+.input_div{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.p_request {
+    color : white;
+    font-family: "S-CoreDream-7";
+    font-size: 1.5rem;
+}
+
+.home_request{
+    margin: 10px;
+    padding-right:350px;
+    padding-top : 10px;
+}
+
+.back_request{
+    color: white;
+    background-color: black;
+    border:none;
+    /* border-radius: 50px; */
+    font-size: 1rem;
+}
+
+.Request{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.select_request{
+    background-color: yellow;
+    border-radius: 7px;
+    width : 250px;
+    height: 50px;
+    color: black;
+    font-family: "S-CoreDream-3";
+    font-size : 1.2rem;
+    margin:20px;
+}
+
+.call_request{
+    background-color: yellow;
+    border-radius: 7px;
+    width : 150px;
+    height: 50px;
+    color: black;
+    font-family: "S-CoreDream-3";
+    font-size : 1.5rem;
+    margin:20px;
+}
+
+.close_button_request{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.close_request{
+    color: white;
+    background-color: black;
+    border:none;
+    /* border-radius: 50px; */
+    font-size: 2rem;
+}
+
+.modal_request{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:black;
+    height:75vh;
+    width: 75vw;
+}
+
+.modal_span_request{
+    color : white;
+    font-family: "S-CoreDream-4";
+    font-size: 1.5rem;
+
+}
+
+.modal_div_request{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.modal_div_request > button {
+    justify-content: end;
+}
+
+.Node_request{
+    /* color:white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map2_request{
+    width: "auto";
+    height: 370;
+}
+
+.searchResult_request{
+    color: white;
+}

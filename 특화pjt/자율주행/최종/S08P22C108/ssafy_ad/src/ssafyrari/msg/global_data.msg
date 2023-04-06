@@ -1,0 +1,9 @@
+string[] nodes_idx
+string[] links_idx
+string[] nodes_idx1
+string[] links_idx1
+string[] nodes_idx2
+string[] links_idx2
+uint32 change
+float64[] CC
+float64[] DD

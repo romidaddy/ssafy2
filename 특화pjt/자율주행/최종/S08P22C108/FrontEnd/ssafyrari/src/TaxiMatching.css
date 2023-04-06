@@ -1,0 +1,27 @@
+.text_box{
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading_img{
+    width:10%;
+}
+
+.return_btn{
+    background-color: yellow;
+    border-radius: 7px;
+    width : 150px;
+    height: 50px;
+    color: black;
+    font-family: "S-CoreDream-3";
+    font-size : 1.5rem;
+    margin:20px;
+}
+
+.taxiMatching{
+    color: white;
+    font-size: 2rem;
+}

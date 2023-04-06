@@ -1,0 +1,28 @@
+
+<launch>
+    <node pkg="ssafyrari" type="mgeo_pub.py" name="mgeo_pub"  />
+    <!-- <node pkg="ssafyrari" type="gpsimu_parser.py" name="gpsimu_parser" /> -->
+    <!-- <node pkg="ssafyrari" type="global_path_pub.py" name="global_path_pub"  /> -->
+    <!-- <node pkg="ssafyrari" type="mgeo_dijkstra_path_2.py" name="mgeo_dijkstra_path"  /> -->
+    <node pkg="ssafyrari" type="pub.py" name="pub" />
+    <!-- <node pkg="ssafyrari" type="custom_publish.py" name="custom_publish" /> -->
+    <node pkg="ssafyrari" type="dijkstra.py" name="dijkstra" />
+    <node pkg="ssafyrari" type="local_path_pub.py" name="local_path_pub" />    
+    <node pkg="ssafyrari" type="tf_pub.py" name="tf"  />
+    <!-- <node pkg="ssafyrari" type="lattice_planner.py" name="lattice_planner" output="screen" args="/Object_topic"/> -->
+    <node pkg="ssafyrari" type="lattice_planner.py" name="lattice_planner"  args="/Object_topic_to_lidar"/>
+
+    <!-- <node pkg="ssafyrari" type="ssafyrari_acc.py" output='screen' name="advanced_purepursuit" args="/lane_path" /> -->
+    <!-- <node pkg="ssafyrari" type="ssafyrari_acc.py" output='screen' name="advanced_purepursuit"/> -->
+    <!-- <node pkg="ssafyrari" type="ssafyrari2_acc.py"  name="advanced_purepursuit" output='screen' /> -->
+    <node pkg="ssafyrari" type="final_acc.py" output='screen' name="advanced_purepursuit" />
+    <node pkg="ssafyrari" type="image_lane_fitting.py" name="image_lane_fitting"  />
+    <node pkg="ssafyrari" type="lidar_velodyne_cluster.py" name="lidar_velodyne_cluster"  />
+    <node pkg="ssafyrari" type="lidar_velodyne_cluster_viz.py" name="lidar_velodyne_cluster_viz"  />
+
+    <!-- <include file="$(find velodyne_pointcloud)/launch/VLP16_points.launch"/> -->
+    <include file="$(find velodyne_pointcloud)/launch/32e_points.launch"/>
+
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find ssafyrari)/rviz/ssafyrari.rviz" />
+    <node pkg="tf" type="static_transform_publisher" name="tf_lidar" args="2 0 1.25 0 0 0 1 Ego velodyne 100"/>
+</launch>
