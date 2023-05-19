@@ -1,0 +1,31 @@
+1. 깃 설치
+2. 파일하나 생성
+3. git config --global user.email "이메일주소"
+4. git config --global user.name "이름"
+5. git init
+6. git add 파일명
+7. git commit -m "[대주제] feat 무엇을 만들었는지 | 한글로 설명"
+코드 새로 작성하면 6번으로 돌아가라
+8. git remote add origin {git주소} / (origin 변수 적용)
+9. git push origin {branch이름}
+10. git pull origin {branch이름}
+
+git clone {git 주소}
+git status -> 어떤 파일을 스테이팅해놓았는지 및 현재상태 확인 (add한거)
+git log --all --oneline / (commit한 거 확인, commitID확인)
+git difftool / (이전 commit과의 변경사항 확인), (h/j/k/l 키를 활용하여 조작, :q로 종료)
+git difftool {commitID1} {commitID2} / (commit ID 확인방법 -> git log --all --oneline), (commitID1과 commitID2 바뀐내용 확인)
+git branch -M mian / (main branch로 바꿔주기)
+git branch {이름} / (branch 만들기)
+git switch {branch이름} / (branch 바꾸기)
+
+<merge방법> 무조건 mainbranch와 다른barnch의 다른 파일만 건들기 
+git switch {main branch}
+git merge {merge할 branch이름}
+
+<파일 복구방법>
+git restore {파일명} / (commit당시의 파일로 복구)
+git restore --source {commitID} / (해당 commit상태로 백업)
+git restore --staged {파일명} / (add한 거 취소가능)
+git revert {commitID} / (commit한 거 취소가능)
+git reset --hard {commitID} / (해당 커밋시점으로 과거 이동)
